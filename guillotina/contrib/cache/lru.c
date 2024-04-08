@@ -1,6 +1,11 @@
 #include <Python.h>
 #include <stdint.h>
-#include <sys/time.h>
+#ifdef _WIN32
+  include <sys/time.h>
+#else
+  include <sys/time.h>
+#endif
+
 
 /*
  * This package is based on a fork of https://github.com/amitdev/lru-dict
