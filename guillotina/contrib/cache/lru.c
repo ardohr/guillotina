@@ -1,10 +1,12 @@
 #include <Python.h>
 #include <stdint.h>
+
 #ifdef _WIN32
-  include <sys/time.h>
+  #include <time.h>
 #else
-  include <sys/time.h>
+  #include <sys/time.h>
 #endif
+
 
 
 /*
